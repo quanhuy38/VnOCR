@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image OCR</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image OCR</h1>
+        <div class="button-container">
+            <button type="button" onclick="window.location.href='/'">Go to Home</button>
+            <button type="button" onclick="performOCR()">Perform OCR</button>
+        </div>
+        <div class="paste-container">
+            <h2>Paste your image here</h2>
+            <div id="paste-box" contenteditable="true" onpaste="handlePaste(event)">
+                <p></p>
+            </div>
+            <img id="pasted-image" src="" alt="Pasted Image" style="display: none;">
+            <button type="button" onclick="saveImage()">Save Image</button>
+        </div>
+        <div id="ocr-result" class="ocr-result"></div>
+        <div id="loading" class="loading" style="display: none;">Loading</div>
+    </div>
+    <script src="/static/js/other.js"></script>
+</body>
+</html>
