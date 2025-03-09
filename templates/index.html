@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>VN OCR</h1>
+        <h1>Webcam Capture</h1>
         <div class="button-container">
             <button type="button" onclick="startWebcam()">Start Webcam</button>
             <button type="button" onclick="captureImage()">Capture Image</button>
@@ -19,7 +19,10 @@
             <video id="webcam" autoplay playsinline width="640" height="480"></video>
         </div>
         <div id="image-container">
-            <img id="captured-image" src="" alt="Captured Image" style="display: none;">
+            <h2>Captured Image</h2>
+            <div class="image-frame">
+                <img id="captured-image" src="" alt="Captured Image" style="display: none;">
+            </div>
         </div>
         <div id="ocr-result" class="ocr-result"></div>
         <div id="loading" class="loading" style="display: none;">Loading</div>
