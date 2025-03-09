@@ -92,3 +92,14 @@ button:hover {
     color: #007bff;
     margin-top: 20px;
 }
+.image-frame {
+    border: 2px solid #ccc;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#captured-image {
+    max-width: 100%;
+    height: auto;
+}
