@@ -8,7 +8,7 @@ import ImagesProcessing as ip
 app = Flask(__name__)
 
 # Tạo thư mục lưu ảnh nếu chưa có
-save_dir = "Projects/HandwritingOCR/captured_images"
+save_dir = "captured_images"
 if not os.path.exists(save_dir):
     os.makedirs(save_dir)
 ocr_process = None
@@ -67,7 +67,7 @@ def processImage(image_path):
 
 def DoOCR(image_path):
     processImage(image_path)
-    output_path = "Projects/HandwritingOCR/processed_images/processed_image.jpg"
+    output_path = "processed_images/processed_image.jpg"
     return ocr.OCRing(output_path)
 
 
