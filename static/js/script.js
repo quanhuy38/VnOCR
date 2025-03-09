@@ -26,6 +26,7 @@ function captureImage() {
     .then(response => response.json())
     .then(data => {
         console.log(data.message);
+        alert("Image captured successfully!");
         document.getElementById('captured-image').src = imageData;
         document.getElementById('captured-image').style.display = 'block';
     })
