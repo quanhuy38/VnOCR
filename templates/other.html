@@ -15,11 +15,18 @@
         </div>
         <div class="paste-container">
             <h2>Paste your image here</h2>
+          <p>Remember to save image before perform OCR</p>
+          <p>It will take several minutes, please be patient</p>
             <div id="paste-box" contenteditable="true" onpaste="handlePaste(event)">
                 <p></p>
             </div>
-            <img id="pasted-image" src="" alt="Pasted Image" style="display: none;">
             <button type="button" onclick="saveImage()">Save Image</button>
+        </div>
+        <div id="image-container">
+            <h2>Pasted Image</h2>
+            <div class="image-frame">
+                <img id="pasted-image" src="" alt="Pasted Image" style="display: none;">
+            </div>
         </div>
         <div id="ocr-result" class="ocr-result"></div>
         <div id="loading" class="loading" style="display: none;">Loading</div>
