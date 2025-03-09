@@ -1,1 +1,1 @@
-# VnOCR
+# Ink2TextVN
