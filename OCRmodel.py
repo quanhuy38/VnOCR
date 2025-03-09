@@ -92,10 +92,6 @@ def load_image(image_file, input_size=448, max_num=12):
     pixel_values = torch.stack(pixel_values)
     return pixel_values
 
-def truncate_tokens(tokens, max_length):
-    if len(tokens) > max_length:
-        tokens = tokens[:max_length]
-    return tokens
 
 def OCRing(image_URL):
     test_image = image_URL
