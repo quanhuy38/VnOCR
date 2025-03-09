@@ -1,0 +1,13 @@
+flask
+opencv-python-headless
+numpy
+Pillow==9.5.0
+matplotlib
+torch
+transformers
+super-image
+hypercorn
+urllib3
+timm
+einops
+accelerate
